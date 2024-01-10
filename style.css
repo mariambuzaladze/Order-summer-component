@@ -1,10 +1,11 @@
 body {
   background-image: url("./images/pattern-background-desktop.svg");
   background-repeat: no-repeat;
-  background-size: cover;
-
+  background-size: contain;
+  background-color: #e0e8ff;
   display: grid;
   place-items: center;
+  min-height: 100vh;
 }
 
 .main {
@@ -47,13 +48,13 @@ h1 {
 
 .music {
   display: flex;
+  align-items: center;
   width: 354px;
   height: 98px;
   background: #f7f9ff;
   border-radius: 11px;
 
-  margin-left: 48px;
-  margin-right: 48px;
+  margin: 0 auto;
 }
 
 .musicIcon {
