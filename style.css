@@ -25,13 +25,17 @@ body {
   height: 220px;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px;
+}
+
 h1 {
-  width: 354px;
   color: #1f2e55;
-  text-align: center;
   font-size: 28px;
   font-weight: 900;
-  margin-top: 45px;
 }
 
 .p1 {
@@ -42,22 +46,29 @@ h1 {
   font-weight: 500;
   line-height: 26px;
   margin-top: 17px;
-  margin-bottom: 20px;
 }
 
 .music {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  width: 354px;
-  height: 98px;
+  width: 100%;
   background: #f7f9ff;
   border-radius: 11px;
+  padding: 25px;
+  margin-top: 24px;
 }
 
-.musicIcon {
-  width: 48px;
-  height: 48px;
-  padding: 25px;
+.annual {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  gap: 6px;
+  flex-direction: column;
 }
 
 h3 {
@@ -65,8 +76,6 @@ h3 {
   color: #1f2e55;
   font-size: 16px;
   font-weight: 900;
-  margin-top: 25px;
-  margin-bottom: 6px;
 }
 
 .p2 {
@@ -74,45 +83,51 @@ h3 {
   color: #717fa6;
   font-size: 16px;
   font-weight: 500;
-  margin-bottom: 25px;
 }
 
-#changeButton {
+.changeButton {
   color: #382ae1;
   font-size: 14px;
   font-weight: 700;
   text-decoration-line: underline;
-  background-color: #f7f9ff;
-  border-color: #f7f9ff;
-  margin-left: 68px;
+  transition: 0.4s;
 }
 
-.buttons {
-  display: flex;
-  flex-direction: column;
+.changeButton:hover {
+  color: #766cf1;
+  text-decoration: none;
 }
 
-#button1 {
+.button1 {
   width: 354px;
   height: 50px;
   flex-shrink: 0;
   border-radius: 11px;
   background: #382ae1;
-  border-color: #382ae1;
+  border: none;
   box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
 
   color: #fff;
   font-size: 15px;
   font-weight: 900;
-
-  margin: 32px 0px;
+  cursor: pointer;
+  transition: 0.4s;
+  margin-top: 32px;
 }
 
-#button2 {
+.button1:hover {
+  background: #766cf1;
+}
+
+.cancel {
   color: #717fa6;
   font-size: 15px;
   font-weight: 900;
+  margin-top: 32px;
+  transition: 0.4s;
+  cursor: pointer;
+}
 
-  background-color: #fff;
-  border-color: #fff;
+.cancel:hover {
+  color: #1f2e55;
 }
